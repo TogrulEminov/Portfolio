@@ -1,0 +1,38 @@
+.section-1 {
+    @include flex();
+    padding: 70px 0;
+    background: $background-section;
+
+    .sec-1-row {
+        @include flex();
+
+        .section-1-content {
+            @include flexdirection();
+            text-align: center;
+
+            h2 {
+                font-size: 32px;
+                color: #212529;
+            }
+
+            p {
+                font-size: 20px;
+                font-weight: 300;
+
+                a {
+                    color: #1D809F;
+                    text-decoration: underline;
+                }
+            }
+
+            .section-1-btn {
+                padding: 20px 40px;
+                background-color: #212529;
+                border-color: #212529;
+                color: #fff;
+                font-size: 16px;
+                border-radius:4px;
+            }
+        }
+    }
+}

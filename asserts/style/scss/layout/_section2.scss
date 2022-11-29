@@ -1,0 +1,79 @@
+.section-2 {
+    background: $background-section2;
+    padding: 40px 0;
+    @include flex();
+}
+
+.sec-2-row {
+    text-align: center;
+    @include flex();
+
+    .content-sec-2 {
+        h3 {
+            font-size: 16px;
+            color: #ecb807;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font-size: 48px;
+            color: #fff;
+            letter-spacing: 1px;
+
+        }
+    }
+}
+
+.sec-2-card-row {
+    margin: 20px 0;
+    @include flex();
+
+    .card-section-2 {
+        @include flexdirection();
+        text-align: center;
+        span {
+            @include flex();
+            border-radius: 50%;
+            background-color: #fff;
+            color: #1D809F;
+            height: 112px;
+            width: 112px;
+            line-height: 130px;
+            box-shadow: 0 3px 3px 0 rgb(0 0 0 / 10%);
+
+            i {
+                font-size: 36px;
+            }
+        }
+
+        h4 {
+            font-size: 24px;
+            font-weight: bolder;
+            color: #fff;
+        }
+
+        p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 16px;
+            i{
+                padding: 0 3px
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:992px){
+    .sec-2-card-row {
+       margin: 20px 0;
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+}
+@media only screen and (max-width:768px){
+    .sec-2-card-row {
+        padding: 40px 0;
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+}

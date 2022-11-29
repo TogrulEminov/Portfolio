@@ -1,0 +1,55 @@
+.section-3 {
+    background: url("	https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/bg-callout.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    width: 100%;
+    @include flex();
+
+    .section-3-row {
+        @include flex();
+        text-align: center;
+
+        .section-3-content {
+            @include flexdirection();
+
+            h2 {
+                width: 40%;
+                font-size: 56px;
+                font-weight: 700;
+                color: #212529;
+
+                span {
+                    font-style: italic;
+                }
+            }
+
+            a {
+                border-radius: 4px;
+                padding: 20px 40px;
+                color: #fff;
+                background-color: #1D809F;
+                border-color: #1D809F;
+                transition: .4s;
+
+                &:hover {
+                    filter: brightness(80%);
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .section-3 {
+        .section-3-row {
+            .section-3-content {
+                h2 {
+                    width: 100%;
+                }
+
+            }
+        }
+
+    }
+}

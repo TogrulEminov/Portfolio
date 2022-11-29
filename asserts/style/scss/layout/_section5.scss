@@ -1,0 +1,55 @@
+.section-5 {
+    text-align: center;
+    @include flex();
+    padding: 40px 0;
+    background: $background-section2;
+
+    .section-5-row {
+        @include flex();
+
+        .section-5-content {
+            @include flexdirection();
+
+            h2 {
+                font-size: 32px;
+                letter-spacing: 1px;
+                color: #fff;
+            }
+
+            .section-5-btns {
+                @include flex();
+                column-gap: 20px;
+
+                a {
+                    padding: 20px 40px;
+                    color: #fff;
+                    font-weight: 400;
+                    border-radius: 4px;
+                    font-size: 16px;
+                    line-height: 20px;
+
+                    &:first-child {
+                        color: #000;
+                        background-color: #f8f9fa;
+                        border-color: #f8f9fa;
+
+                        &:hover {
+                            box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+                        }
+                    }
+
+                    &:last-child {
+                        color: #fff;
+                        background-color: #212529;
+                        border-color: #212529;
+
+                        &:hover {
+                            box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

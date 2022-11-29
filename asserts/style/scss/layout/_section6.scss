@@ -1,0 +1,10 @@
+.section-6{
+    @include flex();
+    .iframe{
+        padding: 0 !important;
+
+        iframe{
+        width: 100%;
+    }
+}
+}

@@ -1,0 +1,23 @@
+@import "./base/grid";
+@import "./base/reset";
+@import "./base/typography";
+
+
+// utils
+@import "./utils/mixins";
+@import "./utils/variables";
+// components
+@import "./components/navbar";
+@import "./components/header";
+@import "./components/footer";
+
+
+// layout
+@import "./layout/section1";
+@import "./layout/section2";
+@import "./layout/section3";
+@import "./layout/section4";
+@import "./layout/section5";
+@import "./layout/section6";
+@import "./layout/section7";
+

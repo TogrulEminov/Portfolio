@@ -1,0 +1,87 @@
+.section-4 {
+    @include flex();
+    text-align: center;
+    padding: 40px 0;
+
+    .sec-content-row {
+        @include flex();
+
+        .content-sec-4 {
+            @include flexdirection();
+            gap: 20px;
+
+            h3 {
+                font-size: 16px;
+                text-transform: uppercase;
+                color: #ecb807;
+            }
+
+            h2 {
+                font-size: 48px;
+                color: #212529;
+                letter-spacing: 1px;
+            }
+        }
+    }
+
+    .sec4-card-row {
+        padding: 20px 0;
+        @include flex();
+        flex-wrap: wrap;
+
+        .portfolio-card {
+            padding: 0 !important;
+
+            .portfolio {
+                position: relative;
+
+                img {
+                    width: 100%;
+                    transition: .4s;
+                    transform: scale(1);
+
+                    &:hover {
+                        transform: scale(0.9);
+                        filter: brightness(16%)
+                    }
+                }
+
+                .caption {
+                    height: 60px;
+                    text-align: start;
+                    position: absolute;
+                    bottom: 100px;
+                    z-index: 99;
+                    left: 40%;
+                    transform: translateX(-50%);
+                    color: #fff;
+                    opacity: .8;
+
+                    h2 {
+                        font-size: 14px;
+                        margin-bottom: 10px;
+                        font-weight: 700;
+                        letter-spacing: 1px;
+                        text-transform: uppercase;
+                    }
+
+                    p {
+                        line-height: 30px;
+                        font-weight: 300;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:992px) {
+    .section-4 {  
+    .sec4-card-row {
+        .portfolio-card {
+            margin: 20px 0;
+            padding: 0 16px !important;
+        }}
+}
+}

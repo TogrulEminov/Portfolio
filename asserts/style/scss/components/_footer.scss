@@ -1,0 +1,46 @@
+.footer {
+    padding: 20px 0;
+    @include flex();
+    text-align: center;
+
+    .footer-row {
+        @include flex();
+
+        .footer-content {
+            @include flexdirection();
+            text-align: center;
+
+            ul {
+                @include flex();
+                column-gap: 30px;
+
+                li {
+                    @include flex();
+                    width: 64px;
+                    height: 64px;
+                    background-color: #1D809F;
+                    box-shadow: 0 3px 3px 0 rgb(0 0 0 / 10%);
+                    border-radius: 50%;
+                    transition: .4s;
+
+                    &:hover {
+                        background-color: #1D809F;
+                        opacity: .8;
+                    }
+
+                    a {
+                        color: #fff;
+                        line-height: 40px;
+                        font-size: 24px;
+                    }
+                }
+            }
+
+            p {
+                color: #6c757d;
+                font-size: 16px;
+                letter-spacing: 1px;
+            }
+        }
+    }
+}

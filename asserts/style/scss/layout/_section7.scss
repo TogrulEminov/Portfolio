@@ -1,0 +1,104 @@
+.section-7 {
+    background: $background-section;
+    padding: 20px 0;
+    @include flex();
+    text-align: center;
+
+    .section-7-row {
+        margin: 40px 0;
+        @include flex();
+
+        .section-7-header {
+            text-align: center;
+            @include flexdirection();
+
+            h2 {
+                font-size: 40px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                font-weight: 700;
+                line-height: 40px;
+            }
+
+            h3 {
+                color: #6c757d;
+                font-style: italic;
+                font-size: 16px;
+                letter-spacing: 1px;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .section-7-cards-row {
+        @include flex();
+        flex-wrap: wrap;
+
+        .all-cards {
+            margin: 20px 0;
+            text-align: center;
+            @include flexdirection();
+
+            .cards-image {
+                img {
+                    width: 224px;
+                    height: 224px;
+                    border-radius: 50%;
+                    border: 8px solid rgba(0, 0, 0, 0.1);
+                }
+            }
+
+            .cards-content {
+                text-align: center;
+                @include flexdirection();
+                gap: 15px;
+
+                h4 {
+                    font-size: 24px;
+                    color: #212529;
+                    font-weight: 700;
+                    line-height: 30px;
+                    letter-spacing: 1px;
+                }
+
+                p {
+                    font-size: 16px;
+                    color: #6c757d;
+                    letter-spacing: 1px;
+                    font-weight: 600;
+                }
+            }
+
+            .social-cards {
+                @include flex();
+                column-gap: 20px;
+
+                a {
+                    background-color: #212529;
+                    border-radius: 50%;
+                    @include flex();
+                    width: 40px;
+                    color: #fff;
+                    height: 40px;
+                }
+            }
+        }
+    }
+
+    .section-7-end-row {
+        padding: 60px 0 20px;
+        @include flex();
+        align-items: center;
+
+        .section-7-end-content {
+            text-align: center;
+
+            p {
+                line-height: 30px;
+                font-size: 16px;
+                color: #6c757d;
+                letter-spacing: 1px;
+            }
+        }
+    }
+}
